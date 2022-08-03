@@ -4,7 +4,7 @@ import { Lesson } from "./Lesson";
 import { List, X } from "phosphor-react";
 import { useState } from "react";
 import classNames from "classnames";
-import { Video } from "./Video";
+
 
 
 

@@ -25,7 +25,7 @@ export function Subscribe() {
         email
       }
     })
-    navigate('/event/lesson/aula-de-react')
+    navigate('/event')
   }
   console.log(email)
 
