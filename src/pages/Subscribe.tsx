@@ -25,12 +25,12 @@ export function Subscribe() {
         email
       }
     })
-    navigate('/event')
+    navigate('/event/#lesson')
   }
   console.log(email)
 
   return (
-    <div className="min-h-screen bg-[url('../assets/blur-react-icon.png')] bg-cover bg-no-repeat flex flex-col items-center">
+    <div className="lesson min-h-screen bg-[url('../assets/blur-react-icon.png')] bg-cover bg-no-repeat flex flex-col items-center">
       <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto md:flex-col md:text-center md:max-w-[70vw]">
           <div className="max-w-[640px] md:flex md:flex-col md:items-center">
               <Logo />

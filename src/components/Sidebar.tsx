@@ -5,13 +5,6 @@ import { List, X } from "phosphor-react";
 import { useState } from "react";
 import classNames from "classnames";
 
-
-
-
-
-
-
-
 export function Sidebar() {
   const { data } = useGetLessonsQuery()
   console.log(data)
