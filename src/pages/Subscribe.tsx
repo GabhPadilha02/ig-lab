@@ -31,8 +31,8 @@ export function Subscribe() {
 
   return (
     <div className="min-h-screen bg-[url('../assets/blur-react-icon.png')] bg-cover bg-no-repeat flex flex-col items-center">
-      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
-          <div className="max-w-[640px]">
+      <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto md:flex-col md:text-center md:max-w-[70vw]">
+          <div className="max-w-[640px] md:flex md:flex-col md:items-center">
               <Logo />
               <h1 className="mt-8 text-[2.5rem] leading-tight">
                 Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
@@ -41,7 +41,7 @@ export function Subscribe() {
                 Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
               </p>
           </div>
-          <div className="p-8 bg-gray-700 border border-gray-500 rounded">
+          <div className="p-8 bg-gray-700 border border-gray-500 rounded md:w-[100vw] md:mt-8">
             <strong className="text-2xl mb-6 block">
               Inscreva-se gratuitamente
             </strong>
