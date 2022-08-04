@@ -1,10 +1,10 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 import bgMokup from "../assets/bg-mokup.png"
 
-
+const LOCAL_STORAGE_KEY = "users:savedUsers"
 
 export function Subscribe() {
 
@@ -32,8 +32,22 @@ export function Subscribe() {
     navigate('/event')
   }
   
-  
-  
+  function loadSavedUsers() {
+    const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+    if(saved) {
+      setEmail(JSON.parse(saved))
+      setName(JSON.parse(saved))
+    }
+  }
+  useEffect(() => {
+    loadSavedUsers()
+  },[])
+  function setTasksAndSave(newUsers: string) {
+    setEmail(newUsers)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newUsers))
+    setName(newUsers)
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newUsers))
+  }
   
 
   return (
