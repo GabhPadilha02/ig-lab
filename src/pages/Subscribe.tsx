@@ -29,9 +29,7 @@ export function Subscribe() {
         email
       }
     })
-  
-    
-    navigate('/event/#lesson')
+    navigate('/event')
   }
   
   
