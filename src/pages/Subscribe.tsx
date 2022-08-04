@@ -6,7 +6,6 @@ import bgMokup from "../assets/bg-mokup.png"
 
 
 
-
 export function Subscribe() {
 
   const navigate = useNavigate()
@@ -18,16 +17,26 @@ export function Subscribe() {
 
   async function handleSubscribe(event: FormEvent) {
     event.preventDefault()
-    
+    const isInputEmailEmpty =  email.length == 0
+    const isInputNameEmpty =  name.length == 0
+    if (isInputEmailEmpty || isInputNameEmpty) {
+      window.alert("Campos vazios")
+    } 
+
     await createSubscriber({
       variables: {
         name,
         email
       }
     })
+  
+    
     navigate('/event/#lesson')
   }
-  console.log(email)
+  
+  
+  
+  
 
   return (
     <div className="lesson min-h-screen bg-[url('../assets/blur-react-icon.png')] bg-cover bg-no-repeat flex flex-col items-center">
