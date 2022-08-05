@@ -19,3 +19,5 @@
 🚀 Já no caso das aulas, as mesmas serão criadas lá dentro do Hygraph, no menu content, onde a interface é muito amigável, ou seja, qualquer pessoa que não saiba programação, consegue postar e editar as aulas! Nesse caso, no nosso front-end utilizamos uma Query do graphql para manipularmos as informações provindas do Hygraph!
 
 🚀 O projeto foi todo desenvolvido durante as aulas do Ignite, porém ao fim das aulas, ficou um desafio "extra" que seria deixar a interface 100% responsiva, desafio que também foi concluído! ✔
+
+[Link do site](https://ig-lab-six.vercel.app/)
